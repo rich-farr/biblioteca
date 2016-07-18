@@ -3,14 +3,10 @@ import reactDom from 'react-dom'
 
 class Container extends React.Component {
 
-  constructor (props) {
-    super(props)
-  }
-
   render () {
     return (
-    	<div>
-      	<h1>{this.props.title}</h1>
+    	<div id="container">
+      	<p>Here's a random book from the database:</p>
     	</div>
     	)
   }

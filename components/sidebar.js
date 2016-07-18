@@ -3,14 +3,10 @@ import reactDom from 'react-dom'
 
 class Sidebar extends React.Component {
 
-  constructor (props) {
-    super(props)
-  }
-
   render () {
     return (
-    	<div>
-      	<h1>{this.props.title}</h1>
+    	<div id="sidebar">
+      	<p>{this.props.sidebarText}</p>
     	</div>
     	)
   }

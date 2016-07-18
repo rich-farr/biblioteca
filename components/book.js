@@ -3,14 +3,12 @@ import reactDom from 'react-dom'
 
 class Book extends React.Component {
 
-  constructor (props) {
-    super(props)
-  }
-
   render () {
     return (
     	<div>
-      	<h1>{this.props.title}</h1>
+        <h1>{this.props.title} ({this.props.year})</h1>
+        <h3>{this.props.author}</h3>
+        <img src={this.props.image} />
     	</div>
     	)
   }
