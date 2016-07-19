@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import reactDom from 'react-dom'
 import Book from './book'
 import data from '../db/db.json'
 
@@ -18,7 +17,7 @@ class Books extends React.Component {
 	    					author = {book.author}
 	    					year = {book.year}
 	    					image = {book.image}
-	    					/>
+	    				/>
     				</div>
     			)
     		})}
