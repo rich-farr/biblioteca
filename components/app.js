@@ -10,9 +10,7 @@ module.exports = React.createClass({
 
   getInitialState: function () {
     return {
-    	title: 'biblioteca',
-    	containerText: 'Here\'s a random book from the database:',
-    	sidebarText: 'Here\'s the sidebar'
+    	title: 'biblioteca'
     }
   },
 
@@ -20,9 +18,8 @@ module.exports = React.createClass({
     return (
       <div>
         <Nav title={this.state.title}/>
-        <Container containerText={this.state.containerText}/>
-        <Book />
-        <Sidebar sidebarText={this.state.sidebarText}/>
+        <Container />
+        <Sidebar />
       </div>
     )
   }

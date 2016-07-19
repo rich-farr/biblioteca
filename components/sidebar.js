@@ -6,7 +6,7 @@ class Sidebar extends React.Component {
   render () {
     return (
     	<div id="sidebar">
-      	<p>{this.props.sidebarText}</p>
+      	<p>Here's the sidebar</p>
     	</div>
     	)
   }
