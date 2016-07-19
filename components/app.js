@@ -5,22 +5,23 @@ import Books from './books'
 import Sidebar from './sidebar'
 import data from '../db/db.json'
 
+class App extends React.Component {
+	constructor(props) {
+		super(props)
+			this.state = {
+				title: 'biblioteca'
+			}
+	}
 
-module.exports = React.createClass({
+	render() {
+		return (
+		  <div>
+		    <Nav title={this.state.title}/>
+		    <Books />
+		    <Sidebar />
+		  </div>
+		)
+	}
+}
 
-  getInitialState: function () {
-    return {
-    	title: 'biblioteca'
-    }
-  },
-
-  render: function () {
-    return (
-      <div>
-        <Nav title={this.state.title}/>
-        <Books />
-        <Sidebar />
-      </div>
-    )
-  }
-})
+export default App
