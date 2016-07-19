@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Book from './book'
-import data from '../db/db.json'
+import data from '../db/books.json'
 
 const books = data.books
 
@@ -12,12 +12,12 @@ class Books extends React.Component {
     		{books.map(function(book, index) {
     			return (
     				<div key={index}>
-	    				<Book
-	    					title = {book.title}
-	    					author = {book.author}
-	    					year = {book.year}
-	    					image = {book.image}
-	    				/>
+        				<Book
+        					title = {book.title}
+        					author = {book.author}
+        					year = {book.year}
+        					image = {book.image}
+        				/>
     				</div>
     			)
     		})}

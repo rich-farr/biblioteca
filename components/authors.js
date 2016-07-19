@@ -1,22 +1,19 @@
 import React, { Component } from 'react'
-import Book from './book'
-import data from '../db/db.json'
+import Author from './author'
+import data from '../db/authors.json'
 
-const books = data.books
+const authors = data.authors
 
 class Authors extends React.Component {
 
   render () {
     return (
-      <div className="books">
-        {books.map(function(book, index) {
+      <div className="authors">
+        {authors.map(function(author, index) {
           return (
             <div key={index}>
-              <Book
-                title = {book.title}
-                author = {book.author}
-                year = {book.year}
-                image = {book.image}
+              <Author
+                name = {author.name}
               />
             </div>
           )

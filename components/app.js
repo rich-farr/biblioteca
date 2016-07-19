@@ -3,7 +3,7 @@ import Nav from './nav'
 import Book from './book'
 import Books from './books'
 import Sidebar from './sidebar'
-import data from '../db/db.json'
+import data from '../db/books.json'
 
 class App extends React.Component {
 

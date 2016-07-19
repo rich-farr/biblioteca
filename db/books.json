@@ -1,0 +1,39 @@
+{
+	"books": [
+		{
+			"id": 1,
+			"title": "The Great Gatsby",
+			"author": "F. Scott Fitzgerald",
+			"image": "http://www.beautifulbookcovers.com/wp-content/uploads/2013/01/gatsby-original-cover-art.jpg",
+			"year": 1925
+		},
+		{
+			"id": 2,
+			"title": "On the Road",
+			"author": "Jack Kerouac",
+			"image": "https://s-media-cache-ak0.pinimg.com/736x/16/d5/e3/16d5e3ddfd15328412f96366e742c3f5.jpg",
+			"year": 1957
+		},
+		{
+			"id": 3,
+			"title": "This Side of Paradise",
+			"author": "F. Scott Fitzgerald",
+			"image": "https://literarytransgressions.files.wordpress.com/2011/07/fitzparadise.jpg",
+			"year": 1920
+		},
+		{
+			"id": 4,
+			"title": "The Dharma Bums",
+			"author": "Jack Kerouac",
+			"image": "http://d.gr-assets.com/books/1428986082l/412732.jpg",
+			"year": 1958
+		},
+		{
+			"id": 5,
+			"title": "Desolation Angels",
+			"author": "Jack Kerouac",
+			"image": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d9/DesolationAngels.jpg/220px-DesolationAngels.jpg",
+			"year": 1965
+		}
+	]
+}
