@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Author from './author'
+import Book from './book'
 import data from '../db/authors.json'
 
 class AuthorDetail extends React.Component {
@@ -7,10 +7,18 @@ class AuthorDetail extends React.Component {
     let author = data.authors[this.props.params.id - 1]
 		return (
 			<div className="pure-u-3-4">
-				<Author
-					name = {author.name}
-					id = {author.id}
-				/>
+        <h1>{author.name}</h1>
+        {author.books.map(function(book, index) {
+          return (
+            <div key={index}>
+                <Book
+                  title = {book.title}
+                  year = {book.year}
+                  id = {book.id}
+                />
+            </div>
+          )
+        })}
 			</div>
 		)
   }
