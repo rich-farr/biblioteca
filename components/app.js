@@ -3,6 +3,7 @@ import Nav from './nav'
 import Book from './book'
 import Books from './books'
 import Sidebar from './sidebar'
+import RandomBook from './randombook'
 import data from '../db/books.json'
 
 class App extends React.Component {
@@ -12,7 +13,7 @@ class App extends React.Component {
 		  <div>
 		    <Nav title="biblioteca"/>
 		    <Sidebar />
-				{this.props.children}
+				{this.props.children || <RandomBook />}
 		  </div>
 		)
 	}

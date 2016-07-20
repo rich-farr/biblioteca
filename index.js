@@ -12,7 +12,6 @@ domready(() => {
   ReactDOM.render((
   	<Router history={hashHistory}>
 	    <Route path='/' component={App}>
-  	    <Route path='/home' component={RandomBook} />
   	    <Route path='/books' component={Books} />
   	    <Route path='/books/:id' component={BookDetail} />
         <Route path='/authors' component={Authors} />
