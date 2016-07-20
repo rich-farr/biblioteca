@@ -4,6 +4,7 @@ main {
 
 img {
 	max-width: 150px;
+	max-height: 250px;
 }
 
 .active {

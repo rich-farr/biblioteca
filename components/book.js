@@ -5,8 +5,8 @@ let Book = (props) => {
   let linkTo = "/books/" + props.id
   return (
     <div className="book">
-      <Link to={linkTo}><img src={props.image} /></Link>
-      <h1>{props.title} ({props.year})</h1>
+      <img src={props.image} />
+      <Link to={linkTo}><h1>{props.title} ({props.year})</h1></Link>
       <h3>{props.author}</h3>
     </div>
     )
