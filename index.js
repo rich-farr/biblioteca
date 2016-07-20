@@ -6,14 +6,16 @@ import Authors from './components/authors'
 import RandomBook from './components/randombook'
 import BookDetail from './components/bookdetail'
 import domready from 'domready'
-import { Router, Route, hashHistory } from 'react-router'
+import { Router, Route, hashHistory, IndexRoute } from 'react-router'
 
 domready(() => {
   ReactDOM.render((
   	<Router history={hashHistory}>
 	    <Route path='/' component={App}>
-  	    <Route path='/books' component={Books} />
-  	    <Route path='/books/:id' component={BookDetail} />
+        <IndexRoute component={RandomBook} />
+  	    <Route path='/books' component={Books}>
+    	    <Route path='/books/:id' component={BookDetail} />
+        </Route>
         <Route path='/authors' component={Authors} />
       </Route>
     </Router>

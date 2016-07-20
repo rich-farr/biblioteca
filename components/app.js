@@ -13,7 +13,7 @@ class App extends React.Component {
 		  <div>
 		    <Nav title="biblioteca"/>
 		    <Sidebar />
-				{this.props.children || <RandomBook />}
+				{this.props.children}
 		  </div>
 		)
 	}
