@@ -7,7 +7,7 @@ class Nav extends React.Component {
     return (
     	<nav>
       	<h1>Welcome to {this.props.title}</h1>
-        <Link to="/">Home</Link>
+        <Link to="/home">Home</Link>
         <Link to="/books">Books</Link>
         <Link to="/authors">Authors</Link>
     	</nav>

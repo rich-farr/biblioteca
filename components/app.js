@@ -11,8 +11,8 @@ class App extends React.Component {
 		return (
 		  <div>
 		    <Nav title="biblioteca"/>
-		    <Books />
 		    <Sidebar />
+				{this.props.children}
 		  </div>
 		)
 	}
