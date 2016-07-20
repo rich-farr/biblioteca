@@ -4,8 +4,8 @@ class Sidebar extends React.Component {
 
   render () {
     return (
-    	<div id="sidebar">
-      	<p>Here's the sidebar</p>
+    	<div id="sidebar" className="pure-u-1-4">
+      	<p>Here is the sidebar</p>
     	</div>
     	)
   }

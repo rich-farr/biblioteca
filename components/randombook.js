@@ -8,7 +8,7 @@ class RandomBook extends React.Component {
 
   render () {
     return (
-    	<div className="books">
+    	<div className="books pure-u-3-4">
   			<Book
   				title = {randomBook.title}
   				author = {randomBook.author}
