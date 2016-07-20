@@ -8,7 +8,7 @@ class Authors extends React.Component {
 
   render () {
     return (
-      <div className="authors">
+      <div className="authors pure-u-3-4">
         {authors.map(function(author, index) {
           return (
             <div key={index}>
