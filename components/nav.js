@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import reactDom from 'react-dom'
+import { Link } from 'react-router'
 
 class Nav extends React.Component {
 
@@ -7,9 +7,9 @@ class Nav extends React.Component {
     return (
     	<nav>
       	<h1>Welcome to {this.props.title}</h1>
-        <a href="/">Home</a>
-        <a href="/books">Books</a>
-        <a href="/authors">Authors</a>
+        <Link to="/">Home</Link>
+        <Link to="/books">Books</Link>
+        <Link to="/authors">Authors</Link>
     	</nav>
     	)
   }
