@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
+import { IndexLink } from 'react-router'
 
 class Nav extends React.Component {
 
@@ -7,7 +8,7 @@ class Nav extends React.Component {
     return (
     	<nav>
       	<h1>Welcome to {this.props.title}</h1>
-        <Link to="/" activeClassName="active">Home</Link>
+        <IndexLink to="/" activeClassName="active">Home</IndexLink>
         <Link to="/books" activeClassName="active">Books</Link>
         <Link to="/authors" activeClassName="active">Authors</Link>
     	</nav>
