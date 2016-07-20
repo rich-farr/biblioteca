@@ -17,6 +17,7 @@ class Books extends React.Component {
         					author = {book.author}
         					year = {book.year}
         					image = {book.image}
+                  id = {book.id}
         				/>
     				</div>
     			)

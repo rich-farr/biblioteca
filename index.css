@@ -5,3 +5,7 @@ main {
 img {
 	max-width: 150px;
 }
+
+.active {
+  color: green;
+}

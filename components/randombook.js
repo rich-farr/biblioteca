@@ -14,6 +14,7 @@ class RandomBook extends React.Component {
   				author = {randomBook.author}
   				year = {randomBook.year}
   				image = {randomBook.image}
+  				id = {randomBook.id}
   			/>
     	</div>
     )

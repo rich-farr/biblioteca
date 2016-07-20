@@ -7,9 +7,9 @@ class Nav extends React.Component {
     return (
     	<nav>
       	<h1>Welcome to {this.props.title}</h1>
-        <Link to="/home">Home</Link>
-        <Link to="/books">Books</Link>
-        <Link to="/authors">Authors</Link>
+        <Link to="/home" activeClassName="active">Home</Link>
+        <Link to="/books" activeClassName="active">Books</Link>
+        <Link to="/authors" activeClassName="active">Authors</Link>
     	</nav>
     	)
   }
