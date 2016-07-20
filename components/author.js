@@ -1,10 +1,11 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router'
 
 const Author = (props) => {
+  let linkTo = "/authors/" + props.id
   return (
     <div>
-      <h1>{props.name}</h1>
-      <h3>{props.title} ({props.year})</h3>
+      <h1><Link to={linkTo}>{props.name}</Link></h1>
     </div>
     )
 }

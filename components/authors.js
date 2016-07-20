@@ -14,6 +14,7 @@ class Authors extends React.Component {
             <div key={index}>
               <Author
                 name = {author.name}
+                id = {author.id}
               />
             </div>
           )
