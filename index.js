@@ -12,11 +12,10 @@ domready(() => {
   ReactDOM.render((
   	<Router history={hashHistory}>
 	    <Route path='/' component={App}>
-        <IndexRoute component={RandomBook} />
-  	    <Route path='/books' component={Books}>
-    	    <Route path='/books/:id' component={BookDetail} />
-        </Route>
-        <Route path='/authors' component={Authors} />
+        <IndexRoute component={RandomBook}/>
+  	    <Route path='/books' component={Books} />
+    	    <Route path='/books/:id' component={BookDetail}/>
+        <Route path='/authors' component={Authors}/>
       </Route>
     </Router>
     ),
