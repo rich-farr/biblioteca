@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
 
-const Book = (props) => {
+let Book = (props) => {
   let linkTo = "/books/" + props.id
   return (
     <div className="book">

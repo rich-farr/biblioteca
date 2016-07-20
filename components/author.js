@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router'
 
-const Author = (props) => {
+let Author = (props) => {
   let linkTo = "/authors/" + props.id
   return (
     <div>
