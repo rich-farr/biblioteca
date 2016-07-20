@@ -9,3 +9,7 @@ img {
 .active {
   color: green;
 }
+
+.book {
+  display: flex
+}
