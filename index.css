@@ -14,3 +14,7 @@ img {
 .book {
   display: flex
 }
+
+.book img {
+  margin: 0 1em;
+}

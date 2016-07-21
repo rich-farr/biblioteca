@@ -6,7 +6,7 @@ let Book = (props) => {
   return (
     <div className="book">
       <img src={props.image} />
-      <Link to={linkTo}><h1>{props.title} ({props.year})</h1></Link>
+      <h1><Link to={linkTo}>{props.title} ({props.year})</Link></h1>
       <h3>{props.author}</h3>
     </div>
     )
