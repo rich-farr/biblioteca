@@ -18,10 +18,12 @@ class Search extends React.Component {
     let books = data.books,
         searchString = this.state.searchString.trim().toLowerCase()
 
-    if(searchString.length > 0) {
+    if (searchString.length > 0) {
       books = books.filter((book) => {
         return book.title.toLowerCase().match( searchString )
       })
+    } else {
+      books = []
     }
 
     return (
