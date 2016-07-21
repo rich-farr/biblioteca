@@ -14,6 +14,10 @@ class Search extends React.Component {
     this.setState({searchString: event.target.value})
   }
 
+  clickLink() {
+    this.setState({searchString: ''})
+  }
+
   render() {
 
     let books = data.books,
@@ -33,7 +37,7 @@ class Search extends React.Component {
           {books.map((book, index) => {
             let linkTo = "/books/" + book.id
             return <div key={index}>
-              <Link to={linkTo}>{book.title}</Link>
+              <Link to={linkTo} onClick={this.clickLink.bind(this)}>{book.title}</Link>
             </div>
           })}
       </div>
