@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import data from '../db/books.json'
+import { Link } from 'react-router'
 
 class Search extends React.Component {
   constructor(props) {
@@ -30,8 +31,9 @@ class Search extends React.Component {
       <div>
         <input type="text" value={this.state.searchString} onChange={this.handleChange.bind(this)} placeholder="Search here" />
           {books.map((book, index) => {
+            let linkTo = "/books/" + book.id
             return <div key={index}>
-              {book.title}
+              <Link to={linkTo}>{book.title}</Link>
             </div>
           })}
       </div>
