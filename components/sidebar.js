@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import Search from './search'
+import bookData from '../db/books.json'
+
+var books = bookData.books
 
 class Sidebar extends React.Component {
 
