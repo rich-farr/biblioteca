@@ -5,10 +5,10 @@ import data from '../db/authors.json'
 const authors = data.authors
 
 class Authors extends React.Component {
-  
+
   render () {
     return (
-      <div className="authors pure-u-3-4">
+      <div>
         {authors.map(function(author, index) {
           return (
             <div key={index}>

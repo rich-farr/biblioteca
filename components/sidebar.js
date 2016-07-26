@@ -10,7 +10,7 @@ class Sidebar extends React.Component {
 
   render () {
     return (
-    	<div id="sidebar" className="pure-u-1-4">
+    	<div id="sidebar">
         <Search />
     	</div>
     	)

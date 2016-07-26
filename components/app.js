@@ -10,10 +10,10 @@ class App extends React.Component {
 
 	render() {
 		return (
-		  <div>
+		  <div id="container">
 		    <Nav title="biblioteca"/>
-		    <Sidebar />
-				{this.props.children}
+			    <Sidebar />
+					{this.props.children}
 		  </div>
 		)
 	}

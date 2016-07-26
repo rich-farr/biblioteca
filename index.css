@@ -1,20 +1,59 @@
-main {
-  text-align: center;
+html, body {
+  margin: 0
 }
 
-img {
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#sidebar {
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+  order: 1;
+  flex: 1;
+}
+
+.books {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  order: 2;
+  flex: 3;
+}
+
+nav {
+  display: flex;
+  min-width: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*img {
 	max-width: 150px;
 	max-height: 250px;
-}
+}*/
 
 .active {
   color: green;
 }
 
 .book {
-  display: flex
+  display: flex;
+  overflow: hidden;
+}
+
+.book-content {
+  padding: 0 1em;
 }
 
 .book img {
-  margin: 0 1em;
+  max-width: 25%;
+  height: auto;
 }

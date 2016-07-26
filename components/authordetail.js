@@ -6,7 +6,7 @@ class AuthorDetail extends React.Component {
   render () {
     let author = data.authors[this.props.params.id - 1]
 		return (
-			<div className="pure-u-3-4">
+			<div>
         <h1>{author.name}</h1>
         {author.books.map(function(book, index) {
           return (

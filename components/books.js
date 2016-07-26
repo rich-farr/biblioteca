@@ -8,7 +8,7 @@ class Books extends React.Component {
 
   render () {
     return (
-    	<div className="books pure-u-3-4">
+    	<div className="books">
     		{books.map(function(book, index) {
     			return (
     				<div key={index}>

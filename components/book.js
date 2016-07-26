@@ -6,8 +6,10 @@ let Book = (props) => {
   return (
     <div className="book">
       <img src={props.image} />
-      <h1><Link to={linkTo}>{props.title} ({props.year})</Link></h1>
-      <h3>{props.author}</h3>
+      <div className="book-content">
+        <h1><Link to={linkTo}>{props.title} ({props.year})</Link></h1>
+        <h3>{props.author}</h3>
+      </div>
     </div>
     )
 }

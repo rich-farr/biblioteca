@@ -6,7 +6,7 @@ class BookDetail extends React.Component {
   render () {
     let book = data.books[this.props.params.id - 1]
 		return (
-			<div className="pure-u-3-4">
+			<div>
 				<Book
 					title = {book.title}
 					author = {book.author}

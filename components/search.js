@@ -14,6 +14,7 @@ class Search extends React.Component {
     this.setState({searchString: event.target.value})
   }
 
+//this clears the search box when a search result link is clicked
   clickLink() {
     this.setState({searchString: ''})
   }
@@ -32,7 +33,7 @@ class Search extends React.Component {
     }
 
     return (
-      <div>
+      <div id="search-bar">
         <input type="text" value={this.state.searchString} onChange={this.handleChange.bind(this)} placeholder="Search here" />
           {books.map((book, index) => {
             let linkTo = "/books/" + book.id
