@@ -106,6 +106,10 @@ a, a:visited {
   justify-content: space-around;;
 }
 
+#nav-links a {
+  padding: 0 .5em;
+}
+
 #nav-heading {
   flex: 1;
   padding: 0 1em;
