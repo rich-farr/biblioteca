@@ -1,5 +1,8 @@
+@import 'https://fonts.googleapis.com/css?family=Raleway:300,700';
+
 html, body {
-  margin: 0
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
 }
 
 #container {
@@ -19,30 +22,29 @@ html, body {
 .books {
   display: flex;
   flex-direction: column;
-  padding: 1em;
+  /*padding: 1em;*/
   order: 2;
   flex: 4;
 }
 
 nav {
+  background-color: #333333;
+  color: white;
   display: flex;
   min-width: 100%;
   align-items: center;
   justify-content: space-around;
 }
 
-a {
+a, a:visited {
+  color: #B5B5B5;
   text-decoration: none;
 }
 
-.active {
-  color: green;
-}
 
 .book {
   display: flex;
-  overflow: hidden;
-  padding: 0 1em 0 0;
+  padding: 1em;
 }
 
 .book-content {
@@ -57,4 +59,23 @@ a {
 .cover-image {
   max-width: 25%;
   overflow: hidden;
+}
+
+.active {
+  color: green;
+}
+
+#search-bar {
+  position: relative;
+}
+
+#dropdown {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.search-result {
+  margin: .5em;
+  color: white;
 }

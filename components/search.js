@@ -35,12 +35,14 @@ class Search extends React.Component {
     return (
       <div id="search-bar">
         <input type="text" value={this.state.searchString} onChange={this.handleChange.bind(this)} placeholder="Search here" />
-          {books.map((book, index) => {
-            let linkTo = "/books/" + book.id
-            return <div key={index}>
-              <Link to={linkTo} onClick={this.clickLink.bind(this)}>{book.title}</Link>
-            </div>
-          })}
+          <div id="dropdown">
+            {books.map((book, index) => {
+              let linkTo = "/books/" + book.id
+              return <div className="search-result" key={index}>
+                <Link to={linkTo} onClick={this.clickLink.bind(this)}>{book.title}</Link>
+              </div>
+            })}
+          </div>
       </div>
     )
   }
