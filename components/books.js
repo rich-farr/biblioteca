@@ -11,7 +11,7 @@ class Books extends React.Component {
     	<div className="books">
     		{books.map(function(book, index) {
     			return (
-    				<div key={index} className="book">
+    				<div key={index}>
         				<Book
         					title = {book.title}
         					author = {book.author}

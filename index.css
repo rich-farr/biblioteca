@@ -22,7 +22,7 @@ html, body {
 .books {
   display: flex;
   flex-direction: column;
-  /*padding: 1em;*/
+  padding: 1em;
   order: 2;
   flex: 4;
 }
@@ -31,6 +31,7 @@ nav {
   background-color: #333333;
   color: white;
   display: flex;
+  flex-wrap: wrap;
   min-width: 100%;
   align-items: center;
   justify-content: space-around;
@@ -45,6 +46,9 @@ a, a:visited {
 .book {
   display: flex;
   padding: 1em;
+  box-shadow: 10px 10px 5px #888888;
+  border: solid 1px #ABABAB;
+  margin: 0 0 2em 0;
 }
 
 .book-content {
@@ -54,6 +58,10 @@ a, a:visited {
 .book img {
   width: 100%;
   height: auto;
+}
+
+.book h1 {
+  margin-top: 0;
 }
 
 .cover-image {
@@ -67,15 +75,34 @@ a, a:visited {
 
 #search-bar {
   position: relative;
+  flex: 1;
+  padding: 0 1em;
+}
+
+#search-bar input {
+  width: 100%;
 }
 
 #dropdown {
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.7);
   text-align: center;
+  width: 100%;
 }
 
 .search-result {
   margin: .5em;
   color: white;
+}
+
+#nav-links {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;;
+}
+
+#nav-heading {
+  flex: 1;
+  padding: 0 1em;
 }
