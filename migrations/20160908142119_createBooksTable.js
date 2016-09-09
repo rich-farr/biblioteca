@@ -7,7 +7,7 @@ exports.up = function(knex, Promise) {
     table.string('isbn')
     table.string('my_description')
     table.string('google_description')
-    table.boolean('have_read').notNullable()
+    table.boolean('have_read').notNullable().defaultTo(false)
     table.boolean('lent_it').notNullable().defaultTo(false)
     table.boolean('wishlist').notNullable().defaultTo(false)
     table.integer('author_id').notNullable()

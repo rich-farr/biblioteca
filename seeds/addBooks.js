@@ -11,6 +11,8 @@ exports.seed = function(knex, Promise) {
       isbn: '0141182636',
       my_description: 'A fitting end to a much-loved series. Glad Harry made it through, but was pretty pissed off when Fred Weasley snuffed it. I also liked the epilogue; I don\'t care what anyone says',
       have_read: true,
+      lent_it: false,
+      wishlist: false,
       author_id: 3}),
     knex('books').insert({
       id: 2,
@@ -19,6 +21,8 @@ exports.seed = function(knex, Promise) {
       isbn: '000655136X',
       my_description: 'Deranged, manic, magnificent. Thompson\'s most famous and accessible work. Start here.',
       have_read: true,
+      lent_it: false,
+      wishlist: false,
       author_id: 5}),
     knex('books').insert({
       id: 3,
@@ -27,6 +31,8 @@ exports.seed = function(knex, Promise) {
       isbn: '0571200435',
       my_description: '',
       have_read: false,
+      lent_it: false,
+      wishlist: false,
       author_id: 2}),
     knex('books').insert({
       id: 4,
@@ -35,6 +41,8 @@ exports.seed = function(knex, Promise) {
       isbn: '9780143039600',
       my_description: '',
       have_read: true,
+      lent_it: false,
+      wishlist: false,
       author_id: 1}),
     knex('books').insert({id: 5,
       title: 'Harry Potter and the Deathly Hallows',
@@ -42,6 +50,8 @@ exports.seed = function(knex, Promise) {
       isbn: '9780747591054',
       my_description: '',
       have_read: true,
+      lent_it: false,
+      wishlist: false,
       author_id: 11}),
     knex('books').insert({
       id: 6,
@@ -50,6 +60,8 @@ exports.seed = function(knex, Promise) {
       isbn: '0684856476',
       my_description: '',
       have_read: true,
+      lent_it: false,
+      wishlist: false,
       author_id: 5}),
     knex('books').insert({
       id: 7,
@@ -58,6 +70,8 @@ exports.seed = function(knex, Promise) {
       isbn: '0141972041',
       my_description: '',
       have_read: true,
+      lent_it: false,
+      wishlist: false,
       author_id: 1}),
     knex('books').insert({
       id: 8,
@@ -66,6 +80,8 @@ exports.seed = function(knex, Promise) {
       isbn: '1440631328',
       my_description: '',
       have_read: true,
+      lent_it: false,
+      wishlist: false,
       author_id: 4}),
     knex('books').insert({
       id: 9,
@@ -74,6 +90,8 @@ exports.seed = function(knex, Promise) {
       isbn: '0141912561',
       my_description: '',
       have_read: true,
+      lent_it: false,
+      wishlist: false,
       author_id: 1}),
     knex('books').insert({
       id: 10,
@@ -82,6 +100,8 @@ exports.seed = function(knex, Promise) {
       isbn: '0141010037',
       my_description: '',
       have_read: true,
+      lent_it: false,
+      wishlist: false,
       author_id: 6}),
     knex('books').insert({
       id: 11,
@@ -90,6 +110,8 @@ exports.seed = function(knex, Promise) {
       isbn: '1440638888',
       my_description: '',
       have_read: true,
+      lent_it: false,
+      wishlist: false,
       author_id: 4}),
     knex('books').insert({
       id: 12,
@@ -98,6 +120,8 @@ exports.seed = function(knex, Promise) {
       isbn: '0140043519',
       my_description: '',
       have_read: true,
+      lent_it: false,
+      wishlist: false,
       author_id: 7}),
     knex('books').insert({
       id: 13,
@@ -106,6 +130,8 @@ exports.seed = function(knex, Promise) {
       isbn: '0586085602',
       my_description: '',
       have_read: true,
+      lent_it: false,
+      wishlist: false,
       author_id: 7}),
     knex('books').insert({
       id: 14,
@@ -114,6 +140,8 @@ exports.seed = function(knex, Promise) {
       isbn: '000720499X',
       my_description: '',
       have_read: false,
+      lent_it: false,
+      wishlist: false,
       author_id: 1}),
     knex('books').insert({
       id: 15,
@@ -122,6 +150,8 @@ exports.seed = function(knex, Promise) {
       isbn: '1853262129',
       my_description: '',
       have_read: false,
+      lent_it: false,
+      wishlist: false,
       author_id: 3}),
     knex('books').insert({
       id: 16,
@@ -130,6 +160,8 @@ exports.seed = function(knex, Promise) {
       isbn: '0141439602',
       my_description: '',
       have_read: true,
+      lent_it: false,
+      wishlist: false,
       author_id: 8}),
     knex('books').insert({
       id: 17,
@@ -138,6 +170,8 @@ exports.seed = function(knex, Promise) {
       isbn: '0864733054',
       my_description: '',
       have_read: true,
+      lent_it: false,
+      wishlist: false,
       author_id: 9}),
     knex('books').insert({
       id: 18,
@@ -146,6 +180,8 @@ exports.seed = function(knex, Promise) {
       isbn: '0143204343',
       my_description: '',
       have_read: true,
+      lent_it: false,
+      wishlist: false,
       author_id: 10})
   );
 };
