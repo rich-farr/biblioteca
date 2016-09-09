@@ -8,8 +8,8 @@ exports.up = function(knex, Promise) {
     table.string('my_description')
     table.string('google_description')
     table.boolean('have_read').notNullable()
-    table.boolean('lent_it').notNullable()
-    table.boolean('wishlist').notNullable()
+    table.boolean('lent_it').notNullable().defaultTo(false)
+    table.boolean('wishlist').notNullable().defaultTo(false)
     table.integer('author_id').notNullable()
   })
 };
