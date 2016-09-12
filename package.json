@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "budo . -d --serve bundle.js --live --pushstate",
+    "database": "nodemon ./bin/www",
     "build": "browserify . -o public/bundle.js -g uglifyify",
     "test": "browserify test.js | node | tap-spec",
     "dist": "mkdir -p dist && bash -c 'cp *.{js,html,css} dist'",
@@ -43,6 +44,7 @@
     "browserify": "^13.0.0",
     "budo": "^8.2.0",
     "gh-pages": "^0.11.0",
+    "nodemon": "^1.10.2",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
     "tap-spec": "^4.1.1",
