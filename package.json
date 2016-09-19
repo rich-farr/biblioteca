@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "budo . -d --serve bundle.js --live --pushstate",
-    "server": "nodemon ./bin/www",
+    "server": "nodemon ./server/bin/www",
     "build": "browserify . -o public/bundle.js -g uglifyify",
     "test": "browserify test.js | node | tap-spec",
     "dist": "mkdir -p dist && bash -c 'cp *.{js,html,css} dist'",
