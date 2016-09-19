@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "budo . -d --serve bundle.js --live --pushstate",
-    "database": "nodemon ./bin/www",
+    "server": "nodemon ./bin/www",
     "build": "browserify . -o public/bundle.js -g uglifyify",
     "test": "browserify test.js | node | tap-spec",
     "dist": "mkdir -p dist && bash -c 'cp *.{js,html,css} dist'",
@@ -33,7 +33,9 @@
     "express": "^4.14.0",
     "knex": "^0.11.10",
     "pg": "^6.1.0",
-    "react-router": "^2.6.0"
+    "react-redux": "^4.4.5",
+    "react-router": "^2.6.0",
+    "redux": "^3.5.2"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
