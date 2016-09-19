@@ -6,8 +6,8 @@ const app = express()
 // Middleware
 
 const bodyParser = require('body-parser')
-const bookRoutes = require('./routes/book')
-const authorRoutes = require('./routes/author')
+const bookRoutes = require('./server/routes/book')
+const authorRoutes = require('./server/routes/author')
 
 // Hooking up Express middleware
 app.use(bodyParser.json())

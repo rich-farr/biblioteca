@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Book from './book'
-import data from '../db/books.json'
+import data from '../../db/books.json'
 
 var randomBook = data.books[Math.floor(Math.random() * data.books.length)]
 

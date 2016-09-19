@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Book from './book'
-import data from '../db/authors.json'
+import data from '../../db/authors.json'
 
 class AuthorDetail extends React.Component {
   render () {

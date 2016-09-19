@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Author from './author'
-import data from '../db/authors.json'
+import data from '../../db/authors.json'
 
 const authors = data.authors
 

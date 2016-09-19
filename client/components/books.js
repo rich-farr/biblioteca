@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Book from './book'
-import data from '../db/books.json'
+import data from '../../db/books.json'
 
 const books = data.books
 

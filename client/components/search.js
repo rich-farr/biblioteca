@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import data from '../db/books.json'
+import data from '../../db/books.json'
 import { Link } from 'react-router'
 
 class Search extends React.Component {
