@@ -17,4 +17,4 @@ export default (
         <Route path='/authors/:id' component={AuthorDetail}/>
     </Route>
   </Router>
-  )
+)
